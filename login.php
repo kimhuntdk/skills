@@ -119,19 +119,19 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="register.html">Register</a>
+            <a class="nav-link" href="register.php">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">login</a>
+            <a class="nav-link" href="login.php">login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>
         </ul>
       </div>
@@ -140,76 +140,59 @@
 </header>
 
 <main>
-<div class="container-fluid" style="padding-top: 0px;">
-    <br>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Thai Student (สำหรับนิสิตไทย)
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action">สมัครคอสภาษาอังกฤษ (เรียนออนไลน์)</button>
-                    <button type="button" class="list-group-item list-group-item-action">สมัครสอบภาษาอังกฤษ</button>
-                    <button type="button" class="list-group-item list-group-item-action">สมัครทัวร์</button>
-
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="text-center">Login</h3>
+              </div>
+              <div class="card-body">
+                <form id="my-form" method="post" action="check_login.php">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
                   </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                International Student (สำหรับนิสิตต่างชาติ)
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action">สมัครคอสอบรมภาษาอังกฤษ (เรียนออนไลน์)</button>
-                    <button type="button" class="list-group-item list-group-item-action">สมัครคอสอบรมภาษาไทย</button>
-                    <button type="button" class="list-group-item list-group-item-action">สมัครทัวร์</button>
-
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password">
                   </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                going to study 
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action">สมัครคอสอบรมภาษาอังกฤษ (เรียนออนไลน์)</button>
-                    <button type="button" class="list-group-item list-group-item-action">สมัครคอสอบรมภาษาไทย</button>
-                    <button type="button" class="list-group-item list-group-item-action">สมัครทัวร์</button>
-
+                  <div class="text-center">
+                    <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <input type="reset" class="btn btn-primary" value="Reset" >
                   </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-</div>
+<br><br><br><br>
 
  
 
-  <br>
+
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2023 Graduate School MSU</p>
   </footer>
 </main>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="Captcha-Plugin/src/jquery.captcha.basic.js"></script>
+   <script type="text/javascript">
+		$( document ).ready( function () {
       
+     $('#my-form').captcha();
+			
+		} ); 
+		
+		
+			</script>    
   </body>
 </html>

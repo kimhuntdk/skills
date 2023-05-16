@@ -119,19 +119,19 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="register.html">Register</a>
+            <a class="nav-link" href="register.php">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">login</a>
+            <a class="nav-link" href="login.php">login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>
         </ul>
       </div>
@@ -145,20 +145,29 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-header">
-                <h3 class="text-center">Login</h3>
+                <h3 class="text-center">Register</h3>
               </div>
               <div class="card-body">
-                <form>
+                <form id="my-form" method="post" name="my-form" action="member-save.php">
+                  <!-- <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div> -->
                   <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" name="password" class="form-control" id="password">
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" name="confirm_password" class="form-control" id="confirm_password">
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                 
+                    <input type="submit" class="btn btn-primary" value="Register">
                     <input type="reset" class="btn btn-primary" value="Reset" >
                   </div>
                 </form>
@@ -167,7 +176,7 @@
           </div>
         </div>
       </div>
-<br><br><br><br>
+      <br><br>
 
  
 
@@ -175,13 +184,23 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2023 Graduate School MSU</p>
+    <p>&copy; 2023 Graduate School MSU </p>
   </footer>
 </main>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="Captcha-Plugin/src/jquery.captcha.basic.js"></script>
+   <script type="text/javascript">
+		$( document ).ready( function () {
       
+     $('#my-form').captcha();
+			
+		} ); 
+		
+		
+			</script>
   </body>
 </html>

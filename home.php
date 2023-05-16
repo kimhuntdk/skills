@@ -119,19 +119,19 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="register.html">Register</a>
+            <a class="nav-link" href="register.php">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">login</a>
+            <a class="nav-link" href="login.php">login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>
         </ul>
       </div>
@@ -140,50 +140,99 @@
 </header>
 
 <main>
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="text-center">Register</h3>
-              </div>
-              <div class="card-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password">
-                  </div>
-                  <div class="mb-3">
-                    <label for="confirmPassword" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirmPassword">
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Register</button>
-                    <input type="reset" class="btn btn-primary" value="Reset" >
-                  </div>
-                </form>
+<!-- <div class="container-fluid" style="padding-top: 0px;">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+          <div class="carousel-caption text-start">
+            <h1>สมัครคอสภาษาอังกฤษ</h1>
+            <img src="img/crouse-en.png" class="img-fluid" alt="Responsive image">
+            <p><a class="btn btn-lg btn-primary" href="#">Sign</a></p> 
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="carousel-caption text-start">
+              <h1>สมัครคอสภาษาอังกฤษ</h1>
+              <img src="img/crouse-en.png" class="img-fluid" alt="Responsive image">
+               <p><a class="btn btn-lg btn-primary" href="#">Sign</a></p>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <div class="carousel-caption text-start">
+                <h1>สมัครคอสภาษาอังกฤษ</h1>
+                <img src="img/ithesis-close.png" class="img-fluid" alt="Responsive image">
+                <p><a class="btn btn-lg btn-primary" href="#">Sign</a></p> 
               </div>
             </div>
+      </div>
+     
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div> -->
+<div class="container">
+  <div class="row">
+   
+    <div class="row">
+    
+      <div class="col-sm-4">
+        <br> <br> <br>
+        <div class="card">
+          <div class="card-body">
+            
+            <img src="img/GS1.png" class="img-thumbnail">
+            <h5 class="card-title text-center">Thai Course (a period of 2 months)</h5>
+            <p class="text-center"><a href="#" class="btn btn-warning btn-sm">Apply Now</a></p>
           </div>
         </div>
       </div>
-      <br><br>
-
- 
+      <div class="col-sm-4">
+        <br> <br> <br>
+        <div class="card">
+          <div class="card-body">
+     
+            <img src="img/GS2.png" class="img-thumbnail">
+            <h5 class="card-title text-center">English Course (a period of 3 months)
+            </h5>
+            <p class="text-center"><a href="#" class="btn btn-warning btn-sm">Apply Now</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <br> <br> <br>
+        <div class="card">
+          <div class="card-body">
+       
+            <img src="img/GS3.png" class="img-thumbnail">
+            <h5 class="card-title text-center">Cultural Tours
+            </h5>
+            <p class="text-center"><a href="#" class="btn btn-warning btn-sm">Apply Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>  
 
 
   <!-- FOOTER -->
   <footer class="container">
+    <br><br>
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2023 Graduate School MSU </p>
+    <p>&copy; 2023 Graduate School MSU</p>
   </footer>
 </main>
 
