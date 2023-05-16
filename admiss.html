@@ -10,19 +10,10 @@
 </head>
 <body>
 
-    <div class="container">
-
-        <div class="row">
-            <div class="col">
-              1 of 2
-            </div>
-            <div class="col">
-              2 of 2
-            </div>
-          </div>
-
-        <div class="row">
-          <div class="col-sm">
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="d-flex flex-column justify-content-center">
+          <!-- เนื้อหาภายใน div นี้จะอยู่กึ่งกลางระหว่างส่วนบนและล่าง -->
+          <div class="col-sm d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -33,7 +24,7 @@
                 </div>
               </div>
           </div>
-          <div class="col-sm">
+          <div class="col-sm d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
